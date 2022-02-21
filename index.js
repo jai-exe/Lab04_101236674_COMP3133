@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const userRouter = require('./routes/userRoutes')
 
 const app = express();
-app.use(express.json()); // Make sure it comes back as json
+app.use(express.json());
 
-//TODO - Replace you Connection String here
+
 mongoose.connect('mongodb+srv://gbc:s3cr3t@cluster0.dhvqi.mongodb.net/UserDatabase?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
